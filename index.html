@@ -617,7 +617,7 @@ function toggleNav(id) {
           <div class="grid">
             <div class="card">
               <h4>Description</h4>
-              <p>The cluster must be architected to tolerate the failure of at least one node (N+1 resiliency) without impacting service availability or causing workload disruption. This requires sufficient compute and storage headroom, proper configuration of AHV High Availability (HA), and validated restart capability for virtual machines. The control must verify not only configuration but also actual failover behaviour under test conditions.</p>
+              <p>The cluster must be architected to tolerate the failure of at least one node, subject to supported topology and capacity limits, by maintaining sufficient compute and storage headroom and by correctly configuring AHV High Availability. The control shall verify that virtual machines can be restarted on healthy hosts within expected recovery tolerances during node failure scenarios.</p>
             </div>
 
             <div class="card">
